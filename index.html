@@ -1,0 +1,17 @@
+<%= form_with model: @plan, url: calendars_path, class: 'form' do |f| %>
+  ...
+<% end %>
+<div class='calendar'>
+  <% @week_days.each do |day| %>
+    <div class='item'>
+      <div class='date'>
+        <%= day[:month] %>/<%= day[:date] %>
+      </div>
+      ...
+    </div>
+  <% end %>
+</div>
+
+
+
+
